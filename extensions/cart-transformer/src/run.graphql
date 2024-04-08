@@ -1,0 +1,13 @@
+query RunInput {
+  cart {
+    lines {
+      id
+      quantity
+      bundleId: attribute(key: "_bundleId") {
+        value
+      }
+    }
+  }
+}
+
+# This query defines what the function will receive as an input
